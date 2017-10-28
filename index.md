@@ -1,3 +1,3 @@
 ## Welcome!
-https://paulalc.github.io/RPresentations/
-https://paulalc.github.io/SparkBigeeky/
+- https://paulalc.github.io/RPresentations/
+- https://paulalc.github.io/SparkBigeeky/
