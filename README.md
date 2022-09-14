@@ -1,2 +1,1 @@
-# Paula LC
-
+# Welcome to my personal website!
