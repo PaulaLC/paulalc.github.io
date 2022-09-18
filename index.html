@@ -1,657 +1,251 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
-
-<head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>PAULA LC</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700,800,900&display=swap" rel="stylesheet">
-
-</head>
-
-<body id="top">
-
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/logo.png" alt="Homepage">
-            </a>
-        </div>
-
-        <nav class="header-nav">
-
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
-
-            <div class="header-nav__content">
-                <h3>MENU</h3>
-
-                <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#work" title="work">Work</a></li>
-                    <li><a class="smoothscroll"  href="#talks" title="talks">Talks&Courses</a></li>
-                    <li><a class="smoothscroll"  href="#skills" title="skills">Skills</a></li>
-                    <!-- <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li> -->
-                </ul>
-
-            </div> <!-- end header-nav__content -->
-
-        </nav>  <!-- end header-nav -->
-
-        <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-text">Menu</span>
-            <span class="header-menu-icon"></span>
-        </a>
-
-    </header> <!-- end s-header -->
-
-
-    <!-- home
-    ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-
-        <div class="overlay"></div>
-        <div class="shadow-overlay"></div>
-
-        <div class="home-content">
-
-            <div class="row home-content__main">
-                    <h1>I'm <span class="typed"></span></h1>
-                    <p>Data Scientist, AI Designer</p>
-                <div class="home-content__buttons">
-                    <a href="#about" class="smoothscroll btn btn--stroke">
-                        More About
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>PAULA LC</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">PAULA LC</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about"><span>About</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h3 class="mx-auto my-0 text-uppercase">Hello, I'm</h3>
+                        <h1 class="mx-auto my-0">PAULA LC</h1>
+                        <h2 class="text-black mx-auto mt-2 mb-5">Data scientist and dataviz designer at Apple</h2>
+                        <a class="btn btn-primary" href="#about">More About</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                      <h2 class="mx-auto my-0"> today. </h2>
+                        <p class="text-black">
+                        I create new data exploration experiences for 
+                        Apple Cloud Services, California.
+                        <br><br>
+                        I design and build interactive reports in R. 
+                        Easy to read, easy to reproduce.
+                        <br><br>
+                        I am author of <i>El arte del dato bien contado</i>, 
+                        a dataviz blog, and speak in events about data science, 
+                        R, and dataviz.
+                        <br><br>
+                        Not everything is data. I enjoy life playing piano and singing, 
+                        as well as creating my own song versions.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row gx-4 gx-lg-5 px-4 justify-content-center">
+                    <div class="col-lg-8">
+                      <h2 class="mx-auto my-0"> before. </h2>
+                        <p class="text-black">
+                        Last year, I've been working in Ireland at Apple as well,
+                        as main data scientist in Mac Systems Quality team.
+                        <br><br>
+                        Previously, I was designing AI products at Telefónica, Spain, 
+                        where we built a recommendation system based on Reinforcement learning using PySpark.
+                        <br><br>
+                        At University, I studied Statistics and Operations Research.
+                        <hr>
+                        <br><br>
+                        <br><br>
+                        <b>I think data can change the world where we live, and do it better.</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="events">
+           <div class="container px-4 px-lg-5">
+              <h1 class="mx-auto my-0">Projects.</h1>
+              <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                  <div class="col-xl-8 col-lg-7">
+                    <a href="https://elartedeldato.com" target="_blank">
+                    <img class="img-fluid mb-3 mb-lg-0" 
+                  src="assets/img/projects/elarte_comp.png" alt="..." />
                     </a>
-                </div>
-
-            </div>
-
-            <div class="home-content__scroll">
-                <a href="#about" class="scroll-link smoothscroll">
-                    <span>Scroll Down</span>
-                </a>
-            </div>
-
-            <div class="home-content__line"></div>
-
-        </div> <!-- end home-content -->
-
-
-        <ul class="home-social">
-            <li>
-                <a href="https://www.linkedin.com/in/paulalopezcasado/"><i class="fa fa-linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
-            </li>
-            <li>
-                <a href="https://twitter.com/paulalcasado"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
-            </li>
-            <li>
-                <a href="https://github.com/PaulaLC/"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
-            </li>
-            <li>
-                <a href="https://paulalcasado.wordpress.com/"><i class="fa fa-wordpress" aria-hidden="true"></i><span>Wordpress</span></a>
-            </li>
-        </ul>
-        <!-- end home-social -->
-
-    </section> <!-- end s-home -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id='about' class="s-about">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead subhead--dark">Hello, I'm</h3>
-                <h1 class="display-1 display-1--light">Paula LC</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row about-desc" data-aos="fade-up">
-            <div class="col-full">
-                <p>
-                 I'm Data Scientist in the Mac Systems Quality team at Apple. 
-                 I'm passionate about Data, Innovation, and Technology and
-                 I believe that they are the key to transform our lives.</p>
-            </div>
-        </div> <!-- end about-desc -->
-
-        <!-- <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-
-            <div class="col-block stats__col ">
-                <div class="stats__count">127</div>
-                <h5>Days of work</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">1505</div>
-                <h5>Lines of code</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">109</div>
-                <h5>Hours of courses</h5>
-            </div>
-            <div class="col-block stats__col">
-                <div class="stats__count">74</div>
-                <h5>Pi digits in mind</h5>
-            </div>
-
-        </div> <!-- end about-stats -->
-
-        <div class="row">
-         <div class="video-content">
-          <a href="https://youtube.com/watch?v=T89K2EzGyA4" title="BigDataSpain" target="_blank">
-              <img src="images/image_4.jpg" alt="">
-          </a>
-        </div>
-        </div>
-
-        <div class="about__line"></div>
-
-    </section> <!-- end s-about -->
-
-
-    <!-- services
-    ================================================== -->
-    <section id='work' class="s-services">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">What I Do</h3>
-                <h1 class="display-2">Think big, make it happen, and use data to create a better world for the next generations.</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row services-list block-1-2 block-tab-full">
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-paint-brush"></i>
-                </div>
-                <div class="service-text">
-                  <h3 class="h2">AI Design</h3>
-                  <p>To innovate intelligence products easy-to-use and useful which improve customer's lives.</p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-search"></i>
-                </div>
-                <div class="service-text">
-                  <h3 class="h2">Data Discovery</h3>
-                  <p>Graphs, code, and a lot of SQL to extract the gold from the data.</p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-cube"></i>
-                </div>
-                <div class="service-text">
-                  <h3 class="h2">Deep Algorithms</h3>
-                  <p>To make the ideas come true developing ML & Deep Learning algorithms with Spark and Python.</p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="icon-megaphone"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Tell the story</h3>
-                    <p>To show the gold strikes to the business teams with more design and creativity.
-                    </p>
-                </div>
-            </div>
-
-        </div> <!-- end services-list -->
-
-    </section> <!-- end s-services -->
-
-
-    <!-- works
-    ================================================== -->
-    <section id='talks' class="s-works">
-
-        <div class="intro-wrap">
-
-            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
-                <div class="col-full">
-                    <h3 class="subhead">Talks&Courses</h3>
-                    <h1 class="display-2 display-2--light">Keep learning every day.</h1>
-                </div>
-            </div> <!-- end section-header -->
-
-        </div> <!-- end intro-wrap -->
-
-        <div class="row works-content">
-            <div class="col-full masonry-wrap">
-                <div class="masonry">
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="https://paulalc.github.io/Data21/#/" target="_blank"  class="thumb-link" title="Data21" data-size="1050x700">
-                                    <img src="images/portfolio/data.png" alt="">
-                                    <div class="item-folio__text">
-                                        <h3 class="item-folio__title">
-                                          DATA: THE NEW OIL OF THE 21ST CENTURY
-                                        </h3>
-                                        <p class="item-folio__cat">
-                                            IRON HACK MEETUP
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <a href="https://paulalc.github.io/Data21/#/" target="_blank" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="https://paulalc.github.io/RPresentations/#/" target="_blank" class="thumb-link" title="PresentationsR" data-size="1050x700">
-                                    <img src="images/portfolio/r.jpg" alt="">
-                                    <div class="item-folio__text">
-                                        <h3 class="item-folio__title">
-                                          HOW TO CREATE PRESENTATIONS WITH R
-                                        </h3>
-                                        <p class="item-folio__cat">
-                                            R USERS GROUP MADRID
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <a href="https://paulalc.github.io/RPresentations/#/" target="_blank" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-                            <div class="item-folio__thumb">
-                                <a href="https://paulalc.github.io/SparkBigeeky/#/" target="_blank" class="thumb-link" title="Spark" data-size="1050x700">
-                                    <img src="images/portfolio/spark.JPG" alt="">
-                                    <div class="item-folio__text">
-                                        <h3 class="item-folio__title">
-                                          APACHE SPARK FOR DUMMIES
-                                        </h3>
-                                        <p class="item-folio__cat">
-                                            BIGEEKIES, TELEFÓNICA
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <a href="https://paulalc.github.io/SparkBigeeky/#/" target="_blank" target="_blank" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                  <div class="masonry__brick" data-aos="fade-up">
-                      <div class="item-folio">
-
-                          <div class="item-folio__thumb">
-                              <a href="images/portfolio/deep.jpeg" target="_blank" class="thumb-link" title="DeepLearning" data-size="1050x700">
-                                  <img src="images/portfolio/deep.jpeg" alt="">
-                                  <div class="item-folio__text">
-                                      <h3 class="item-folio__title">
-                                          DEEP LEARNING COURSE
-                                      </h3>
-                                      <p class="item-folio__cat">
-                                        CDO LEARNING HUB, TELEFÓNICA
-                                      </p>
-                                  </div>
-                              </a>
-                          </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-5">
+                      <div class="featured-text text-center text-lg-left">
+                          <h4>El arte del dato bien contado</h4>
+                          <p class="text-black-50 mb-0">Data Visualization Blog (Spanish)
                       </div>
-                  </div> <!-- end masonry__brick -->
-
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-
-                            <div class="item-folio__thumb">
-                                <a href="images/portfolio/gallery/ai.jpeg" target="_blank" class="thumb-link" title="AI" data-size="1050x700">
-                                    <img src="images/portfolio/ai.jpeg" alt="">
-                                    <div class="item-folio__text">
-                                        <h3 class="item-folio__title">
-                                          ARTIFICIAL INTELLIGENCE FOR FACIAL RECOGNITION
-                                        </h3>
-                                        <p class="item-folio__cat">
-                                            GIRLS INSPIRE TECH, TELEFÓNICA
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                    <div class="masonry__brick" data-aos="fade-up">
-                        <div class="item-folio">
-                            <div class="item-folio__thumb">
-                                <a href="https://paulalcasado.wordpress.com/" target="_blank" class="thumb-link" title="Blog" data-size="1050x700">
-                                    <img src="images/portfolio/blog.JPG" alt="">
-                                    <div class="item-folio__text">
-                                        <h3 class="item-folio__title">
-                                          Data Science Blog
-                                        </h3>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <a href="https://paulalcasado.wordpress.com/" target="_blank" target="_blank" class="item-folio__project-link" title="Project link">
-                                <i class="icon-link"></i>
-                            </a>
-                        </div>
-                    </div> <!-- end masonry__brick -->
-
-                </div> <!-- end masonry -->
-            </div> <!-- end col-full -->
-        </div> <!-- end works-content -->
-
-    </section> <!-- end s-works -->
-
-
-    <!-- clients
-    ================================================== -->
-    <section id="skills" class="s-clients">
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">skills</h3>
-                <h1 class="display-2">Programming skills & software tools</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row clients-outer" data-aos="fade-up">
-            <div class="col-full">
-                <div class="clients">
-                    <a href="#0" title="" class="clients__slide"><img src="images/clients/aws.png" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/clients/R.png" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/clients/python.ico" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/clients/spark.png" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/clients/pc.png" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/clients/git.png" /></a>
-                </div> <!-- end clients -->
-            </div> <!-- end col-full -->
-        </div> <!-- end clients-outer -->
-
-        <!-- <div class="row clients-testimonials" data-aos="fade-up">
-            <div class="col-full">
-                <div class="testimonials">
-
-                    <div class="testimonials__slide">
-
-                        <p>Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum.
-                        Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.
-                        Excepturi nam cupiditate culpa doloremque deleniti repellat.</p>
-
-                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
-                        <div class="testimonials__info">
-                            <span class="testimonials__name">Tim Cook</span>
-                            <span class="testimonials__pos">CEO, Apple</span>
-                        </div>
-
-                    </div>
-
-                    <div class="testimonials__slide">
-
-                        <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
-
-                        <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
-                        <div class="testimonials__info">
-                            <span class="testimonials__name">Sundar Pichai</span>
-                            <span class="testimonials__pos">CEO, Google</span>
-                        </div>
-
-                    </div>
-
-                    <div class="testimonials__slide">
-
-                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
-
-                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
-                        <div class="testimonials__info">
-                            <span class="testimonials__name">Satya Nadella</span>
-                            <span class="testimonials__pos">CEO, Microsoft</span>
-                        </div>
-
-                    </div>
-
-                </div><!-- end testimonials -->
-
-            </div> <!-- end col-full -->
-        </div> <!-- end client-testimonials -->
-
-    </section> <!-- end s-clients -->
-
-    <!-- contact
-    ================================================== -->
-<!--
-    <section id="contact" class="s-contact">
-
-        <div class="overlay"></div>
-        <div class="contact__line"></div>
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">Contact</h3>
-                <h1 class="display-2 display-2--light">Reach out for a new project or just say hello</h1>
-            </div>
-        </div>
-
-        <div class="row contact-content" data-aos="fade-up">
-
-            <div class="contact-primary">
-
-                <h3 class="h6">Send me a message</h3>
-
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
-                    <fieldset>
-
-                    <div class="form-field">
-                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
-                    </div>
-                    <div class="form-field">
-                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
-                    </div>
-                    <div class="form-field">
-                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
-                    </div>
-                    <div class="form-field">
-                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
-                    </div>
-                    <div class="form-field">
-                        <button class="full-width btn--primary">Submit</button>
-                        <div class="submit-loader">
-                            <div class="text-loader">Sending...</div>
-                            <div class="s-loader">
-                                <div class="bounce1"></div>
-                                <div class="bounce2"></div>
-                                <div class="bounce3"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    </fieldset>
-                </form>
--->
-
-                <!-- contact-warning -->
-<!--
-                <div class="message-warning">
-                    Something went wrong. Please try again.
-                </div>
-
-                <div class="message-success">
-                    Your message was sent, thank you!<br>
-                </div>
-
-            </div> <!-- end contact-primary -->
-<!--
-        </div> <!-- end contact-content -->
-<!--
-    </section> <!-- end s-contact -->
-    <!-- footer
-    ================================================== -->
-    <footer>
-
-        <div class="row footer-main">
-            <div class="tab-full footer-subscribe">
-
-                <!-- <h4>Get Notified</h4>
-                <div class="subscribe-form">
-                    <form id="mc-form" class="group" novalidate="true">
-                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
-                        <input type="submit" name="subscribe" value="Subscribe">
-                        <label for="mc-email" class="subscribe-message"></label>
-                    </form>
-                </div> -->
-
-            </div>
-            <div class="col-twelve footer-bottom">
-              <ul class="contact-social">
-                  <li>
-                      <a href="https://www.linkedin.com/in/paulalopezcasado/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                  </li>
-                  <li>
-                      <a href="https://twitter.com/paulalcasado"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                  </li>
-                  <li>
-                      <a href="https://github.com/PaulaLC/"><i class="fa fa-github" aria-hidden="true"></i></a>
-                  </li>
-                  <li>
-                      <a href="https://paulalcasado.wordpress.com/"><i class="fa fa-wordpress" aria-hidden="true"></i></a>
-                  </li>
-              </ul> <!-- end contact-social -->
+                  </div>
+              </div>
+           </div>
+        </section>
+        <!-- Events & Talks-->
+        <section class="events-section" id="events">
+          <div class="container px-4 px-lg-5">
+          <h1 class="mx-auto my-0">Events & Talks.</h1>
+          <div class="container-fluid py-2 overflow-scroll">
+              <div class="d-flex flex-row flex-nowrap">
+              <!-- Card 1 -->
+              <div class="card mb-3 col-sm-4">
+              <img src="assets/img/projects/spainai.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">10 keys for a good data visualization</h5>
+                <p class="card-text">Spain AI, 2021</p>
+                 <a href="https://t.co/0Jm0gREPjQ" class="btn btn-primary" target="_blank">Watch the event</a>
+              </div>
+              </div>
+              <!-- Card 11 -->
+              <div class="card mb-3 col-sm-4">
+              <img src="assets/img/projects/rhisp2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Art of data</h5>
+                <p class="card-text">Encuentro R Hispano, 2020</p>
+                 <a href="https://paulalc.github.io/encuentRo_Rhispano/#/" 
+                 class="btn btn-primary" target="_blank">Check the slides</a>
+              </div>
+              </div>
+              <!-- Card 12 -->
+              <div class="card mb-3 col-sm-4">
+              <img src="assets/img/projects/utad.png" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                <h5 class="card-title">Creating impact with data</h5>
+                <p class="card-text">Masterclass U-Tad, 2020</p>
+                 <a href="https://paulalc.github.io/creandoimpactocondatos" 
+                 class="btn btn-primary" target="_blank">Check the slides</a>
+              </div>
+              </div>
+              <!-- Card 9 -->
+              <div class="card mb-3 col-sm-4">
+              <img src="assets/img/projects/codingclub.png" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                <h5 class="card-title">Mastering R presentations</h5>
+                <p class="card-text">Coding Club UC3M, 2019</p>
+                 <a href="https://codingclubuc3m.rbind.io/post/2019-09-24/" 
+                 class="btn btn-primary" target="_blank">Check the workshop</a>
+              </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="card mb-3 col-sm-4">
+              <img src="assets/img/projects/ironhack.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Data: The new oil of the 21st century</h5>
+                <p class="card-text">Iron Hack, 2018</p>
+                 <a href="https://paulalc.github.io/Data21/#/" 
+                 class="btn btn-primary" target="_blank">Check the slides</a>
+              </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="card mb-3 col-sm-4">
+              <img src="assets/img/projects/bigdataspain.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Recommendation Systems using holistic customer insights</h5>
+                <p class="card-text">Big Data Spain, 2018</p>
+                 <a href="https://www.youtube.com/watch?v=T89K2EzGyA4" 
+                 class="btn btn-primary"  target="_blank">Watch the event</a>
+              </div>
+              </div>
+             <!-- Card 6 -->
+              <div class="card mb-3 col-sm-4">
+              <img src="assets/img/projects/telefonica2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">An Introduction to Deep Learning</h5>
+                <p class="card-text">CDO Learning Hub, Telefónica, 2018</p>
+              </div>
+              </div>
+              <!-- Card 7 -->
+              <div class="card mb-3 col-sm-4">
+              <img src="assets/img/projects/girlstech.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Artifical Intelligence for Facial Recognition</h5>
+                <p class="card-text">Girls Inspire Tech, Telefónica, 2018</p>
+                 <a href="https://empresas.blogthinkbig.com/girls-inspire-tech-git2018/" 
+                 class="btn btn-primary"  target="_blank">Read more about</a>
+              </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="card mb-3 col-sm-4">
+              <img src="assets/img/projects/mujereshacker.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Interview by Telefónica #mujereshacker</h5>
+                <p class="card-text">Entrevista Telefónica, 2017</p>
+                 <a href="https://empresas.blogthinkbig.com/historias-de-mujereshacker-paula-lopez-elevenpaths/" 
+                 class="btn btn-primary" target="_blank">Read the interview</a>
+              </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="card mb-3 col-sm-4">
+              <img src="assets/img/projects/spark.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Apache Spark for Dummies</h5>
+                <p class="card-text">Bigeekies Telefónica, 2017</p>
+                 <a href="https://paulalc.github.io/SparkBigeeky" 
+                 class="btn btn-primary" target="_blank">Check the slides</a>
+              </div>
+              </div>
+              <!-- Card 8 -->
+              <div class="card mb-3 col-sm-4">
+              <img src="assets/img/projects/equinox.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Elevator Pitch</h5>
+                <p class="card-text">Equinox Spring, Telefónica, 2017</p>
+                 <a href="https://paulalcasado.wordpress.com/2017/03/27/equinox-spring17-elevator-pitch/" 
+                 class="btn btn-primary" target="_blank">Check the project</a>
+              </div>
+              </div>
+              <!-- Card 10 -->
+              <div class="card mb-3 col-sm-4">
+              <img src="assets/img/projects/rhisp.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">How to create presentations in R</h5>
+                <p class="card-text">R Users Madrid, 2017</p>
+                 <a href="https://paulalc.github.io/RPresentations"
+                 class="btn btn-primary" target="_blank">Check the slides</a>
+              </div>
+              </div>
+              </div>
+          </div> 
           </div>
-
-        </div> <!-- end footer-main -->
-
-        <div class="row footer-bottom">
-            <div class="col-twelve">
-                <div class="copyright">
-                    <span>© Copyright Glint 2017</span>
-                    <span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>
-                </div>
-
-                <div class="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-        </div> <!-- end footer-bottom -->
-
-    </footer> <!-- end footer -->
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <!-- <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div> <!-- end photoSwipe background -->
-
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
-            <div class="line-scale-pulse-out">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/typed.js"></script>
-
-</body>
-
+        </section>
+        <section class="contact-section bg-light" id="contact">
+          <div class="d-flex justify-content-center">
+            <div class="text-center py-4">
+              <a class="btn btn-primary" href="https://twitter.com/paulalcasado" target="_blank">Send me a message</a>
+          </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; paulalc 2022</div></footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
