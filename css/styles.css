@@ -11614,6 +11614,11 @@ body {
   padding-bottom: 2rem;
   padding-top: 10rem;
 }
+
+.portfolio-section {
+  padding: 10rem 0;
+}
+
 .projects-section {
   padding: 10rem 0;
 }
