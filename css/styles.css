@@ -67,11 +67,11 @@
   --bs-font-sans-serif: Raleway, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: Roboto Mono, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Roboto Mono, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
+  --bs-body-font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-size: 1.25rem;
+  --bs-body-font-weight: 300;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #000;
   --bs-body-bg: #fff;
 }
 
@@ -217,7 +217,7 @@ blockquote {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 small, .small {
@@ -4131,6 +4131,7 @@ textarea.form-control-lg {
 }
 
 .navbar {
+  font-size: 1rem;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -4180,6 +4181,7 @@ textarea.form-control-lg {
 }
 
 .navbar-collapse {
+  color: #000;
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
@@ -4187,7 +4189,7 @@ textarea.form-control-lg {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 0;
   background-color: transparent;
   border: 0px;
@@ -4541,27 +4543,27 @@ textarea.form-control-lg {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: #000;
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-  color: rgba(0, 0, 0, 0.9);
+  color: #000;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+  color: #000;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
+  color: #000;
 }
 .navbar-light .navbar-nav .nav-link.disabled {
-  color: rgba(0, 0, 0, 0.3);
+  color: #000;
 }
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
+  color: #000;
 }
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.55);
-  border-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+  color: #000;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -4582,27 +4584,27 @@ textarea.form-control-lg {
   color: #fff;
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.55);
+  color: #000;
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color:  #000;
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
-  color: rgba(255, 255, 255, 0.25);
+  color:  #000;
 }
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff;
 }
 .navbar-dark .navbar-toggler {
-  color: rgba(255, 255, 255, 0.55);
+  color: #000;
   border-color: rgba(255, 255, 255, 0.1);
 }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-dark .navbar-text {
-  color: rgba(255, 255, 255, 0.55);
+  color: #000;
 }
 .navbar-dark .navbar-text a,
 .navbar-dark .navbar-text a:hover,
@@ -4627,11 +4629,11 @@ textarea.form-control-lg {
   width: 26rem;
   height: 32rem;
   box-shadow: 2px 4px 12px rgba(0,0,0,.08);
-  transition: all .3s cubic-bezier(0,0,.5,1);
+  transition: all .5s cubic-bezier(0,0,.25,1);
 
 }
   .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 .card > hr {
   margin-right: 0;
@@ -4741,7 +4743,16 @@ textarea.form-control-lg {
 .card-group > .card {
   margin-bottom: 0.75rem;
 }
+
+  
+@media (max-width: 576px) {
+  .card {
+    height: 28rem;
+  }
+} 
+  
 @media (min-width: 576px) {
+
   .card-group {
     display: flex;
     flex-flow: row wrap;
@@ -11470,13 +11481,10 @@ html {
   scroll-padding-top: calc(4.5rem - 1px);
 }
 
-body {
-  letter-spacing: 0.0625em;
-}
-
 #mainNav {
   min-height: 3.5rem;
   background-color: #fff;
+  font-weight: 600;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11488,7 +11496,7 @@ body {
 }
 #mainNav .navbar-brand {
   color: #000;
-  font-weight: 700;
+  font-weight: 300;
   padding: 0.9rem 0;
 }
 #mainNav .navbar-nav .nav-item:hover {
@@ -11549,12 +11557,11 @@ body {
 }
 
 .btn {
-  padding: 1.25rem 2rem;
-  font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-weight: 600;
   border: 1px solid #000;
+  background-color: #000;
 }
 
 .masthead {
@@ -11570,44 +11577,56 @@ body {
   background-size: cover;
 }
 .masthead h1, .masthead .h1 {
-  font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 4rem;
-  font-weight: 100;
-  line-height: 6.5rem;
-  letter-spacing: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
+
 .masthead h2, .masthead .h2 {
   max-width: 30rem;
-  font-size: 1.25rem;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.masthead h3, .masthead .h3 {
+  max-width: 30rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.about-section {
+  padding: 5rem 0;
+}
+
+.about-section h1 {
+  padding-right: 600px;
+  margin-bottom: 5rem;
 }
 
 @media (max-width: 992px) {
-  .masthead {
-    height: 100vh;
-    padding: 0;
-  }
-  .masthead h1, .masthead .h1 {
-    font-size: 3rem;
-    line-height: 6.5rem;
-  }
-  .masthead h2, .masthead .h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
+  .about-section h1 {
+    padding-right: 100px;
   }
 }
-@media (max-width: 450px) {
-  .masthead h1, .masthead .h1 {
-    font-size: 2rem;
-    line-height: 4rem;
+
+
+.about-section .margin-right {
+   margin-right: 2rem;
+}
+
+.about-section .margin-left {
+   margin-left: 2rem;
+}
+
+@media (max-width: 992px) {
+  .about-section .margin-right {
+   margin-right: 0rem;
+  }
+
+  .about-section .margin-left {
+     margin-left: 0rem;
   }
 }
-.about-section {
-  padding-top: 2rem;
-}
-.about-section p {
-  margin-bottom: 10rem;
-  font-size: 1.2rem;
-}
+
 
 .about-section h2 {
   font-weight: bold;
@@ -11616,24 +11635,29 @@ body {
 }
 
 .portfolio-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .projects-section h1 {
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
 }
 
 .events-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .events-section h1 {
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
 }
+
+.events-section h2 {
+  padding-top: 1rem;
+}
+
 .events-section .featured-text-left, .events-section .featured-text-right{
   padding: 2rem;
 }
